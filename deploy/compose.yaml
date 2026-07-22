@@ -1,0 +1,8 @@
+name: simple-clock-app
+
+services:
+  app:
+    image: ${IMAGE_REF:?IMAGE_REF must be set}
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:7100:80"
